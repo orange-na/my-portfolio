@@ -40,7 +40,8 @@
         "noForEach": "off"
       },
       "suspicious": {
-        "noShadowRestrictedNames": "off"
+        "noShadowRestrictedNames": "off",
+        "noArrayIndexKey": "off"
       },
       "correctness": {
         "useExhaustiveDependencies": "off"
