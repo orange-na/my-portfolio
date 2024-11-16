@@ -39,7 +39,7 @@ export default async function TopTitle() {
           This is my portfolio site.
         </p>
       </div>
-      <div className="flex flex-col -scale-y-100 items-center text-gray-950">
+      <div className="flex flex-col -scale-y-100 items-center text-gray-400">
         <div className="flex gap-8 sm:gap-10 italic">
           <div className="flex">
             <h1 className="text-[30px] tracking-[6px] leading-none animate-appear font-thin sm:tracking-[15px] hover:animate-bounce cursor-pointer sm:text-[55px]">
@@ -73,7 +73,7 @@ export default async function TopTitle() {
             </h1>
           </div>
         </div>
-        <p className="text-[13px] tracking-[6px] font-noto font-bold sm:text-[18px] leading-none sm:tracking-[15px] text-gray-300 italic">
+        <p className="text-[13px] tracking-[6px] font-noto font-bold sm:text-[18px] leading-none sm:tracking-[15px] text-gray-400 italic">
           This is my portfolio site.
         </p>
       </div>

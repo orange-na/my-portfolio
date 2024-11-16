@@ -1,3 +1,4 @@
+import { projects } from "@/constants";
 import ProjectCard from "@/features/projectCard";
 import TopTitle from "@/features/topTitle";
 
@@ -8,20 +9,9 @@ export default function Home() {
 
       <div className="pb-20 js-show-on-scroll">
         <div className="container pt-40 mx-auto grid sm:grid-cols-2 gap-x-10 gap-y-[120px] px-5">
-          <ProjectCard
-            imgSrc="/yutonamba.png"
-            title="Mentorixer"
-            technologies={["Golang", "Next.js"]}
-            codeLink="https://github.com/orange-na/yutoprofile.git"
-            demoLink="https://yutoprofile.vercel.app/"
-          />
-          <ProjectCard
-            imgSrc="/yutonamba.png"
-            title="This is my portfolio site."
-            technologies={["Next.js"]}
-            codeLink="https://github.com/orange-na/yutoprofile.git"
-            demoLink="https://yutoprofile.vercel.app/"
-          />
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
         </div>
       </div>
 
