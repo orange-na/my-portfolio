@@ -1,4 +1,5 @@
 import { Project } from "@/types";
+import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
@@ -11,9 +12,11 @@ export default async function ProjectCard(props: Props) {
   return (
     <div>
       <div className="relative group overflow-hidden shadow-xl w-full text-gray-800 rounded-lg">
-        <img
+        <Image
+          width={1920}
+          height={1080}
           src={props.project.imgSrc}
-          alt=""
+          alt={props.project.title}
           className="object-cover h-full w-full"
         />
         <div className="flex items-center justify-center absolute w-full h-full top-0 -left-[100%] group-hover:bg-[#c0c0c064] group-hover:left-0 duration-300">
