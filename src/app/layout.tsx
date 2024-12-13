@@ -6,11 +6,12 @@ import Footer from "@/components/layouts/footer";
 const notoSansJp = Noto_Sans_JP({
   subsets: ["latin"],
   display: "swap",
+  variable: "--noto-sans-jp",
 });
 
 export const metadata: Metadata = {
-  title: "Yuto Portfolio",
-  description: "Yuto Portfolio",
+  title: "orange-na",
+  description: "orange-na",
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${notoSansJp.className}`}>
+      <body className={`${notoSansJp.variable}`}>
         {children}
         <Footer />
       </body>
