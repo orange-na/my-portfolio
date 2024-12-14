@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export function Profile() {
   return (
-    <section className="inset-0 bg-gradient-to-r from-blue-500 to-purple-500 py-20 w-full">
+    <section className="bg-gradient-to-r from-blue-500 to-purple-500 py-10 h-screen sm:h-auto sm:py-20 w-full sticky top-0">
       <div className="text-white px-10 md:px-32 mx-auto flex flex-col lg:flex-row items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -28,10 +28,10 @@ export function Profile() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl font-bold mb-4">Yuto Namba</h1>
-          <p className="text-xl mb-8">
+          <p className="text-xs sm:text-xl mb-8">
             津山工業高等専門学校 / 電子・情報システム工学専攻
           </p>
-          <p className="text-lg mb-8">
+          <p className="sm:text-lg mb-8">
             私は、モダンなWebアプリケーションの開発に情熱を注いでいます。
             <br />
             クリーンなコードとユーザーフレンドリーなデザインを心がけています。
